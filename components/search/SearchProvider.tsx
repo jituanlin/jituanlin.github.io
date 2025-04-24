@@ -31,7 +31,7 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
       name: name,
       keywords: '',
       shortcut: [],
-      section: locale === fallbackLng ? 'Authors' : 'Auteurs',
+      section: locale === fallbackLng ? 'Authors' : '作者',
       perform: () => router.push(`/${locale}/about/${slug}`),
       icon: (
         <i>
@@ -47,23 +47,23 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
     ...(showAuthorsSearch
       ? []
       : [
-          {
-            id: 'about',
-            name: locale === fallbackLng ? 'About' : 'À propos',
-            keywords: '',
-            shortcut: ['a'],
-            section: locale === fallbackLng ? 'Navigate' : 'Naviguer',
-            perform: () => router.push(`/${locale}/about`),
-            icon: (
-              <i>
-                <AboutIcon />
-              </i>
-            ),
-          },
-        ]),
+        {
+          id: 'about',
+          name: locale === fallbackLng ? 'About' : '关于',
+          keywords: '',
+          shortcut: ['a'],
+          section: locale === fallbackLng ? 'Navigate' : '导航',
+          perform: () => router.push(`/${locale}/about`),
+          icon: (
+            <i>
+              <AboutIcon />
+            </i>
+          ),
+        },
+      ]),
   ]
   /* issue when using regular translations, this is a workaround to show how to implement section titles */
-  const navigationSection = locale === fallbackLng ? 'Navigate' : 'Naviguer'
+  const navigationSection = locale === fallbackLng ? 'Navigate' : '导航'
   return (
     <KBarSearchProvider
       kbarConfig={{
@@ -72,7 +72,7 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
         defaultActions: [
           {
             id: 'home',
-            name: locale === fallbackLng ? 'Home' : 'Accueil',
+            name: locale === fallbackLng ? 'Home' : '首页',
             keywords: '',
             shortcut: ['h'],
             section: navigationSection,
@@ -85,7 +85,7 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
           },
           {
             id: 'blog',
-            name: locale === fallbackLng ? 'Blog' : 'Blog',
+            name: locale === fallbackLng ? 'Blog' : '博客',
             keywords: '',
             shortcut: ['b'],
             section: navigationSection,
@@ -98,7 +98,7 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
           },
           {
             id: 'tags',
-            name: locale === fallbackLng ? 'Tags' : 'Tags',
+            name: locale === fallbackLng ? 'Tags' : '标签',
             keywords: '',
             shortcut: ['t'],
             section: navigationSection,
@@ -111,7 +111,7 @@ export const SearchProvider = ({ children }: SearchProviderProps) => {
           },
           {
             id: 'projects',
-            name: locale === fallbackLng ? 'Projects' : 'Projets',
+            name: locale === fallbackLng ? 'Projects' : '项目',
             keywords: '',
             shortcut: ['p'],
             section: navigationSection,
