@@ -3657,7 +3657,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-spring/web@npm:~9.7.5":
+"@react-spring/web@npm:^9.7.5, @react-spring/web@npm:~9.7.5":
   version: 9.7.5
   resolution: "@react-spring/web@npm:9.7.5"
   dependencies:
@@ -4095,6 +4095,15 @@ __metadata:
   version: 0.7.34
   resolution: "@types/ms@npm:0.7.34"
   checksum: f38d36e7b6edecd9badc9cf50474159e9da5fa6965a75186cceaf883278611b9df6669dc3a3cc122b7938d317b68a9e3d573d316fcb35d1be47ec9e468c6bd8a
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:22.15.2":
+  version: 22.15.2
+  resolution: "@types/node@npm:22.15.2"
+  dependencies:
+    undici-types: "npm:~6.21.0"
+  checksum: e22071571205413518aa3710644ed9603d8f4a417fc59f0e180240e1c05aaf7fb8feecdf553a2da305247b3533d03b58eab6e333115f01f581b9139a6b1dcd47
   languageName: node
   linkType: hard
 
@@ -12779,10 +12788,12 @@ __metadata:
     "@formspree/react": "npm:^2.5.1"
     "@headlessui/react": "npm:^2.2.0"
     "@next/bundle-analyzer": "npm:^15.1.0"
+    "@react-spring/web": "npm:^9.7.5"
     "@svgr/webpack": "npm:^8.1.0"
     "@tailwindcss/forms": "npm:^0.5.9"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/mdx": "npm:^2.0.13"
+    "@types/node": "npm:22.15.2"
     "@types/react": "npm:^19.0.1"
     "@typescript-eslint/eslint-plugin": "npm:^8.18.0"
     "@typescript-eslint/parser": "npm:^8.18.0"
@@ -12804,6 +12815,7 @@ __metadata:
     i18next-browser-languagedetector: "npm:^8.0.2"
     i18next-resources-to-backend: "npm:^1.2.1"
     image-size: "npm:^1.2.1"
+    kbar: "npm:0.1.0-beta.45"
     lint-staged: "npm:^15.2.11"
     next: "npm:^15.2.4"
     next-contentlayer2: "npm:^0.5.3"
@@ -13183,6 +13195,13 @@ __metadata:
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 0097779d94bc0fd26f0418b3a05472410408877279141ded2bd449167be1aed7ea5b76f756562cb3586a07f251b90799bab22d9019ceba49c037c76445f7cddd
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: ec8f41aa4359d50f9b59fa61fe3efce3477cc681908c8f84354d8567bb3701fafdddf36ef6bff307024d3feb42c837cf6f670314ba37fc8145e219560e473d14
   languageName: node
   linkType: hard
 

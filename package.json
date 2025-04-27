@@ -3,8 +3,8 @@
   "version": "2.2.0",
   "private": true,
   "scripts": {
-    "start": "next dev",
-    "dev": "next dev",
+    "start": "next dev -p 3827",
+    "dev": "next dev -p 3827",
     "build": " next build && node ./scripts/postbuild.mjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
@@ -16,6 +16,7 @@
     "@formspree/react": "^2.5.1",
     "@headlessui/react": "^2.2.0",
     "@next/bundle-analyzer": "^15.1.0",
+    "@react-spring/web": "^9.7.5",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "@waline/client": "^3.4.2",
@@ -30,6 +31,7 @@
     "i18next-browser-languagedetector": "^8.0.2",
     "i18next-resources-to-backend": "^1.2.1",
     "image-size": "^1.2.1",
+    "kbar": "0.1.0-beta.45",
     "next": "^15.2.4",
     "next-contentlayer2": "^0.5.3",
     "next-themes": "^0.4.4",
@@ -59,6 +61,7 @@
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/mdx": "^2.0.13",
+    "@types/node": "22.15.2",
     "@types/react": "^19.0.1",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
@@ -81,5 +84,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.9.1"
 }
