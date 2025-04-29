@@ -13,6 +13,7 @@ import SearchButton from '../search/SearchButton'
 import { useTranslation } from 'app/[locale]/i18n/client'
 import type { LocaleTypes } from 'app/[locale]/i18n/settings'
 import { motion } from 'framer-motion'
+import { maintitle } from '@/data/localeMetadata'
 
 const Header = () => {
   const locale = useParams()?.locale as LocaleTypes
@@ -23,18 +24,14 @@ const Header = () => {
     <header>
       <div className="flex items-center justify-between py-10">
         <div>
-          <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
+          <Link href={`/${locale}/`} aria-label={maintitle[locale]}>
             <div className="flex items-center justify-between">
               <div className="mr-3">
                 <Logo />
               </div>
-              {typeof siteMetadata.headerTitle === 'string' ? (
-                <div className="hidden h-6 text-2xl font-semibold sm:block">
-                  {siteMetadata.headerTitle}
-                </div>
-              ) : (
-                siteMetadata.headerTitle
-              )}
+              <div className="hidden h-6 text-2xl font-semibold sm:block">
+                {maintitle[locale]}
+              </div>
             </div>
           </Link>
         </div>
@@ -52,11 +49,10 @@ const Header = () => {
                   className="flex transform-gpu items-center space-x-1 transition-transform duration-300"
                 >
                   <div
-                    className={`hidden font-medium ${
-                      isSelected
+                    className={`hidden font-medium ${isSelected
                         ? 'text-heading-500'
                         : 'text-gray-500 hover:text-gray-900 dark:hover:text-gray-100'
-                    } relative rounded-md px-2 py-1 font-medium transition-colors sm:block`}
+                      } relative rounded-md px-2 py-1 font-medium transition-colors sm:block`}
                   >
                     <span className="relative z-10">{t(`${link.title.toLowerCase()}`)}</span>
                     {isSelected && (

@@ -4,7 +4,7 @@ type Metadata = {
 
 export const maintitle: Metadata = {
   en: "jituanlin's blog",
-  zh: "jituanlin的博客",
+  zh: "林集团的博客",
 }
 
 export const maindescription: Metadata = {
