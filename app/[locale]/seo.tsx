@@ -31,14 +31,6 @@ export function genPageMetadata({
       locale: locale,
       type: 'website',
     },
-    twitter: {
-      title: `${title} | ${maintitle[locale]}`,
-      description: description ? description : maindescription[locale],
-      site: siteMetadata.siteUrl,
-      creator: siteMetadata.author,
-      card: 'summary_large_image',
-      images: image ? [image] : [siteMetadata.socialBanner],
-    },
     ...rest,
   }
 }

@@ -105,12 +105,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata 
       images: ogImages,
       authors: authors.length > 0 ? authors : [siteMetadata.author],
     },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.summary,
-      images: imageList,
-    },
   }
 }
 
